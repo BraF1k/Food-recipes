@@ -78,7 +78,11 @@ button {
     padding: 25px 0;
 }
 
-
+.link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
 
 /* Begin wraper adn form section */
 
@@ -136,3 +140,26 @@ button {
 
 
 /* End wraper adn form section */
+
+/* Begin recipes section */
+
+.right-recipes-block, .section-header {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.right-recipes-block__img {
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+.right-recipes-block__recipe {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 10px;
+}
+
+.right-recipes-block_m-r {
+    margin-right: 17px;
+}
+/* End recipes section */
