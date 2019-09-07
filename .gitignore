@@ -1,0 +1,19 @@
+#Игнорирование модулей
+
+/node_modules/
+
+
+#игнорируем папку build
+/build/
+
+#
+
+gulpfile.js
+
+#
+
+package.json
+
+#
+
+package-lock.json
