@@ -1,3 +1,138 @@
-body {
-    background-color: #000000;
+html {
+    /* font-size: 62.5%(если не rem, то можно не писать); */
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
 }
+
+body {
+    color: #000;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+::selection {
+    background-color: rgba(126, 196, 91, 0.726);
+    text-shadow: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a {
+    color: #039be5;
+    -webkit-text-decoration-skip: objects;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+iframe {
+    border: none;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+}
+
+.section-header_white {
+    color: #ffffff;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.blog-form_m-b {
+    margin-bottom: 30px;
+}
+
+.section_p-t-b {
+    padding: 25px 0;
+}
+
+
+
+/* Begin wraper adn form section */
+
+
+.wrap-bg {
+    background: url(/src/img/bg-1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blog-form {
+    text-align: center;
+    padding: 2em 2em;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.blog-form__food-name,
+.blog-form__food-method,
+.blog-form__food-ingredients {
+    width: 100%;
+    color: #a0a0a0;
+    letter-spacing: 1.5px;
+    padding: 10px 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    resize: none;
+}
+
+.blog-form__food-method,
+.blog-form__food-ingredients {
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+
+.blog-form__btn {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: capitalize;
+    background: rgba(68, 68, 68, .8);
+    padding: 8px 15px;
+    border: none;
+    border: 2px solid rgba(68, 68, 68, .8);
+    margin-top: 15px;
+    outline: none;
+    letter-spacing: 1px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.blog-form__btn:hover {
+    background: rgba(68, 68, 68, 0);
+}
+
+
+/* End wraper adn form section */

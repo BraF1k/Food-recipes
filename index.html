@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="dist/css/all.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <div class="wrap wrap-bg section_p-t-b">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <header class="section-header section-header_m_b section-header_m_t">
+                        <h1 class="section-header__title section-header_white">Книга Рецептов</h1>
+                    </header>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="section blog-form section_m-b">
+
+                        <header class="section-header section-header_m_b">
+                            <h2 class="section-header__title section-header_white">Напишите рецепт</h2>
+                        </header>
+
+
+                        <form action="" class="blog-form__form">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" class="blog-form__food-name blog-form_m-b"
+                                        placeholder="Название блюда">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="" id="" rows="10" class="blog-form__food-method blog-form_m-b"
+                                        placeholder="Метод приготовления(Описание процесса приготовления)"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="" id="" rows="10" class="blog-form__food-ingredients"
+                                        placeholder="Ингредиенты"></textarea></div>
+                            </div>
+
+                            <button type="button" class="btn blog-form__btn">Запостить</button>
+
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-recipes-block">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
 
     <script src="dist/js/all.js"></script>
 </body>
+
 </html>
