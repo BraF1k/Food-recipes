@@ -84,6 +84,14 @@ button {
     line-height: 1.4;
 }
 
+.section-header_m-b {
+    margin-bottom: 10px;
+}
+
+.right-recipes-block_m-b {
+    margin-bottom: 35px;
+}
+
 /* Begin wraper adn form section */
 
 
@@ -149,17 +157,21 @@ button {
 
 .right-recipes-block__img {
     display: block;
-    width: 200px;
+    width: 100%;
     height: auto;
-}
-
-.right-recipes-block__recipe {
-    display: flex;
-    background-color: #ffffff;
-    padding: 10px 10px;
-}
-
-.right-recipes-block_m-r {
     margin-right: 17px;
 }
+
+.right-recipes-block {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.right-recipes-block_display-n {
+    display: none;
+}
+
+/* .right-recipes-block_m-r {
+    margin-right: 17px;
+} */
 /* End recipes section */
