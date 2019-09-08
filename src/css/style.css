@@ -171,7 +171,106 @@ button {
     display: none;
 }
 
-/* .right-recipes-block_m-r {
-    margin-right: 17px;
-} */
 /* End recipes section */
+
+
+/* Мобильное меню */
+
+.mobile-menu {
+    position: fixed;
+    top: 10%;
+    right: 50%;
+    background-color: #fff;
+    height: 500px;
+    width: 700px;
+    transition: all 0.3s ease;
+    /* display: none; */
+    z-index: 5;
+    transform: translate(50%);
+    overflow-y: auto;
+}
+
+.hidden {
+    /* transform: translateX(350px); */
+}
+
+
+.menu-close-btn {
+    position: absolute;
+    top: 57px;
+    right: 36px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    transform: translateX(0px);
+    transform: translateY(-50%);
+}
+
+
+.mobile-items {
+    text-transform: uppercase;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.mobile-items li {
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+
+.mobile-menu button:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.mobile-items li a {
+    text-decoration-line: none;
+    display: block;
+    text-align: left;
+    line-height: 48px;
+    height: 48px;
+    padding-left: 60px;
+}
+
+.mobile-items li a:hover{
+    background-color: rgba(0,0,0,0.05);  
+    transition: all .3s ease;
+    color: #007bff;
+    
+}
+
+.mobile-items li {
+    padding-bottom: 0px;
+    font-size: 15px;
+    line-height: 48px;
+}
+
+
+.sandwich-btn {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+  }
+
+.sandwich-btn:before, .sandwich-btn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #222;
+  }
+
+  .sandwich-btn:before {
+    transform: rotate(45deg);
+  }
+
+  .sandwich-btn:after {
+    transform: rotate(-45deg);
+  }
+
+
+
+/* Конец мобильного меню */
