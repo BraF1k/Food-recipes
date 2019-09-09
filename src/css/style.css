@@ -94,6 +94,9 @@ button {
 
 /* Begin wraper adn form section */
 
+.wrap {
+    position: relative;
+}
 
 .wrap-bg {
     background: url(/src/img/bg-1.jpg) no-repeat;
@@ -176,22 +179,22 @@ button {
 
 /* Мобильное меню */
 
-.mobile-menu {
+.full-recipe-block {
     position: fixed;
-    top: 10%;
-    right: 50%;
+    top: 50%;
+    left: 50%;
     background-color: #fff;
     height: 500px;
     width: 700px;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     /* display: none; */
     z-index: 5;
-    transform: translate(50%);
+    transform: translate(-50%, -50%);
     overflow-y: auto;
 }
 
 .hidden {
-    /* transform: translateX(350px); */
+    transform: translate(-50%, -99999px);
 }
 
 
