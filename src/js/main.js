@@ -1,7 +1,15 @@
 import {
-    ShowRecipe
+    ShowRecipe, HideRecipe
 } from "./show-recipe";
 
 document.querySelector('.right-recipes-block').addEventListener('click', function (event) {
     ShowRecipe(event.target)
 })
+
+document.querySelector('.full-recipe-block_close-btn').addEventListener('click', function() {
+    HideRecipe();
+});
+
+document.querySelector('.overlay').addEventListener('click', function() {
+    HideRecipe();
+});

@@ -60,6 +60,7 @@ button {
     color: inherit;
     font: inherit;
     padding: 0;
+    outline: none;
 }
 
 .section-header_white {
@@ -91,6 +92,26 @@ button {
 .right-recipes-block_m-b {
     margin-bottom: 35px;
 }
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    /* display: none; */
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-4000px);
+    z-index: 4;
+}
+
+.overlay-show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 /* Begin wraper adn form section */
 
@@ -186,7 +207,7 @@ button {
     background-color: #fff;
     height: 500px;
     width: 700px;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     /* display: none; */
     z-index: 5;
     transform: translate(-50%, -50%);
@@ -194,19 +215,7 @@ button {
 }
 
 .hidden {
-    transform: translate(-50%, -99999px);
-}
-
-
-.menu-close-btn {
-    position: absolute;
-    top: 57px;
-    right: 36px;
-    width: 50px;
-    height: 50px;
-    z-index: 5;
-    transform: translateX(0px);
-    transform: translateY(-50%);
+    transform: translate(-50%, -5000px);
 }
 
 
@@ -249,15 +258,29 @@ button {
 }
 
 
-.sandwich-btn {
+
+.full-recipe-block_close-btn {
     position: absolute;
-    top: 10px;
-    left: 8px;
+    top: 57px;
+    right: 36px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    transform: translateX(0px);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.full-recipe-block__sandwich-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 27px;
     width: 32px;
     height: 32px;
   }
 
-.sandwich-btn:before, .sandwich-btn:after {
+.full-recipe-block__sandwich-btn:before, .full-recipe-block__sandwich-btn:after {
     position: absolute;
     left: 15px;
     content: ' ';
@@ -266,11 +289,11 @@ button {
     background-color: #222;
   }
 
-  .sandwich-btn:before {
+  .full-recipe-block__sandwich-btn:before {
     transform: rotate(45deg);
   }
 
-  .sandwich-btn:after {
+  .full-recipe-block__sandwich-btn:after {
     transform: rotate(-45deg);
   }
 
