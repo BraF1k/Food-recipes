@@ -205,58 +205,18 @@ button {
     top: 50%;
     left: 50%;
     background-color: #fff;
-    height: 500px;
-    width: 700px;
+    height: 600px;
+    width: 800px;
     transition: all 0.3s ease;
-    /* display: none; */
     z-index: 5;
     transform: translate(-50%, -50%);
     overflow-y: auto;
+    border-radius: 5px;
 }
 
 .hidden {
     transform: translate(-50%, -5000px);
 }
-
-
-.mobile-items {
-    text-transform: uppercase;
-    margin-top: 100px;
-    padding: 0;
-}
-
-.mobile-items li {
-    padding-bottom: 12px;
-    font-size: 15px;
-}
-
-.mobile-menu button:focus {
-    outline: none;
-    background-color: transparent;
-}
-
-.mobile-items li a {
-    text-decoration-line: none;
-    display: block;
-    text-align: left;
-    line-height: 48px;
-    height: 48px;
-    padding-left: 60px;
-}
-
-.mobile-items li a:hover{
-    background-color: rgba(0,0,0,0.05);  
-    transition: all .3s ease;
-    color: #007bff;
-    
-}
-
-.mobile-items li {
-    padding-bottom: 0px;
-    font-size: 15px;
-    line-height: 48px;
-}
-
 
 
 .full-recipe-block_close-btn {
