@@ -1,6 +1,7 @@
 import {
     ShowRecipe, HideRecipe
 } from "./show-recipe";
+import { PostRecipe } from "./post";
 
 document.querySelector('.right-recipes-block').addEventListener('click', function (event) {
     ShowRecipe(event.target)
@@ -13,3 +14,5 @@ document.querySelector('.full-recipe-block_close-btn').addEventListener('click',
 document.querySelector('.overlay').addEventListener('click', function() {
     HideRecipe();
 });
+
+PostRecipe()

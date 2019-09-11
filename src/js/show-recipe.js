@@ -8,7 +8,6 @@ export function ShowRecipe (link) {
 
 }
 
-
 export function HideRecipe () {
     document.querySelector('.full-recipe-block').classList.add("hidden");
     document.querySelector('.overlay').classList.remove('overlay-show');
