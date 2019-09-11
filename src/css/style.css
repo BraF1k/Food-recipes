@@ -229,6 +229,7 @@ button {
     transform: translateX(0px);
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 6;
 }
 
 
@@ -260,3 +261,15 @@ button {
 
 
 /* Конец мобильного меню */
+
+/* Выносной блок */
+
+.recipe-block_m-b {
+    margin-bottom: 30px;
+}
+
+.recipe-block_m-t {
+    margin-top: 50px;
+}
+
+/* конец выносного блока */

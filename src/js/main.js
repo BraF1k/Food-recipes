@@ -15,4 +15,4 @@ document.querySelector('.overlay').addEventListener('click', function() {
     HideRecipe();
 });
 
-PostRecipe()
+PostRecipe();
