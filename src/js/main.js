@@ -5,6 +5,9 @@ import {
 import {
     PostRecipe
 } from "./post";
+import {
+    CloseIngradientBlock
+} from "./close-ingradient";
 
 
 
@@ -23,3 +26,4 @@ document.querySelector('.overlay').addEventListener('click', function () {
 });
 
 PostRecipe();
+CloseIngradientBlock();
