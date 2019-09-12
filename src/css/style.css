@@ -133,7 +133,7 @@ button {
 
 .blog-form__food-name,
 .blog-form__food-method,
-.blog-form__food-ingredients {
+.ingredients-block__input {
     width: 100%;
     color: #a0a0a0;
     letter-spacing: 1.5px;
@@ -146,7 +146,7 @@ button {
 }
 
 .blog-form__food-method,
-.blog-form__food-ingredients {
+.ingredients-block__input {
     border: 1px solid rgba(255, 255, 255, 0.27);
 }
 
@@ -164,11 +164,22 @@ button {
     letter-spacing: 1px;
     transition: .5s all;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .blog-form__btn:hover {
     background: rgba(68, 68, 68, 0);
 }
+
+.ingredients-block {
+    display: flex;
+}
+
+.ingredients-block_w-20-tac {
+    width: 20%;
+    text-align: center;
+}
+
 
 
 /* End wraper adn form section */
