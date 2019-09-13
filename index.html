@@ -53,12 +53,13 @@
 
                             <div class="row">
                                 <div class="col-md-12">
+
                                     <!-- Bedin ingredients-block -->
                                     <div class="ingredients-block ingredients-block_m-b">
                                         <input type="text" placeholder="Укажите ингадиент"
-                                            class="ingredients-block__input">
+                                            class="ingredients-block__input ingradient">
                                         <input type="number" value="0" min="0"
-                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac">
+                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac ingradient-count">
                                         <select name="measure" class="ingredients-block__measure">
                                             <option value="Грамм" selected>Грамм</option>
                                             <option value="Головка">Головка</option>
@@ -77,49 +78,9 @@
                                     <!-- Bedin ingredients-block -->
                                     <div class="ingredients-block ingredients-block_m-b">
                                         <input type="text" placeholder="Укажите ингадиент"
-                                            class="ingredients-block__input">
+                                            class="ingredients-block__input ingradient">
                                         <input type="number" value="0" min="0"
-                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac">
-                                        <select name="measure" class="ingredients-block__measure">
-                                            <option value="Грамм" selected>Грамм</option>
-                                            <option value="Головка">Головка</option>
-                                            <option value="Кусок">Кусок</option>
-                                            <option value="Литр">Литр</option>
-                                            <option value="Миллилитр">Миллилитр</option>
-                                        </select>
-
-                                        <button type="button"
-                                            class="ingredients-block__btn ingredients-block_hidde-btn">
-                                            <span class="ingredients-block__sandwich-btn"></span>
-                                        </button>
-                                    </div>
-                                    <!-- End ingredients-block -->
-                                    <!-- Bedin ingredients-block -->
-                                    <div class="ingredients-block ingredients-block_m-b">
-                                        <input type="text" placeholder="Укажите ингадиент"
-                                            class="ingredients-block__input">
-                                        <input type="number" value="0" min="0"
-                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac">
-                                        <select name="measure" class="ingredients-block__measure">
-                                            <option value="Грамм" selected>Грамм</option>
-                                            <option value="Головка">Головка</option>
-                                            <option value="Кусок">Кусок</option>
-                                            <option value="Литр">Литр</option>
-                                            <option value="Миллилитр">Миллилитр</option>
-                                        </select>
-
-                                        <button type="button"
-                                            class="ingredients-block__btn ingredients-block_hidde-btn">
-                                            <span class="ingredients-block__sandwich-btn"></span>
-                                        </button>
-                                    </div>
-                                    <!-- End ingredients-block -->
-                                    <!-- Bedin ingredients-block -->
-                                    <div class="ingredients-block ingredients-block_m-b">
-                                        <input type="text" placeholder="Укажите ингадиент"
-                                            class="ingredients-block__input">
-                                        <input type="number" value="0" min="0"
-                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac">
+                                            class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac ingradient-count">
                                         <select name="measure" class="ingredients-block__measure">
                                             <option value="Грамм" selected>Грамм</option>
                                             <option value="Головка">Головка</option>
@@ -161,14 +122,14 @@
                                             Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit. lam delectus, rerum iure sit
                                             alias
-                                            odit laudantium impedit atque? <a href="#"
-                                                class="link right-recipes-block__link">Читать рецепт...</a></p>
+                                            odit laudantium impedit atque? <button type="button"
+                                                class="btn right-recipes-block__btn">Читать рецепт...</button></p>
 
 
 
                                         <div class="right-recipes-block__method right-recipes-block_display-n">
                                             <p class="right-recipes-block__discribe">
-                                                Some tewxtasfac
+                                                Discribe
                                             </p>
                                         </div>
 
@@ -204,7 +165,7 @@
                 <div class="container">
 
                     <!-- Begin Method -->
-                    <div class="recipe-block__method recipe-block_m-b">
+                    <div class="method-block method-block_m-b">
                         <div class="row">
                             <div class="col-md-4">
                                 <img src="src/img/blinchiki.jpg" alt="" class="right-recipes-block__img">
@@ -226,15 +187,14 @@
 
                     <!-- Begin Ingredients -->
 
-                    <div class="recipe-block__ingredients">
+                    <div class="ingredients-all-block">
                         <header class="section-header section-header_m-b">
                             <h3 class="section-header__title">Ингредиенты</h3>
                         </header>
 
-                        <ul>
-                            <li>Картошка</li>
-                            <li>Суши</li>
-                        </ul>
+                        <ol class="ingredients-all-block__list">
+                            <li class="ingredients-all-block__item">Картошка</li>
+                        </ol>
                     </div>
 
                     <!-- End Ingredients -->
