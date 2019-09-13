@@ -94,7 +94,7 @@ button {
 }
 
 .overlay {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     /* display: none; */
     height: 100%;
     left: 0;
@@ -115,7 +115,8 @@ button {
 
 /* Begin wraper adn form section */
 
-.wrap, .ingredients-block {
+.wrap,
+.ingredients-block {
     position: relative;
 }
 
@@ -146,8 +147,18 @@ button {
     resize: none;
 }
 
+
+.arrows_d-n::-webkit-inner-spin-button {
+    display: none;
+}
+
+.ingredients-block__measure {
+    color: #fff;
+    background: rgba(0, 0, 0, .78);
+}
+
 .blog-form__food-method,
-.ingredients-block__input, 
+.ingredients-block__input,
 .ingredients-block__measure {
     border: 1px solid rgba(255, 255, 255, 0.27);
 }
@@ -201,31 +212,33 @@ button {
     width: 32px;
     height: 18px;
     cursor: pointer;
-  }
+}
 
-.ingredients-block__sandwich-btn:before, .ingredients-block__sandwich-btn:after {
+.ingredients-block__sandwich-btn:before,
+.ingredients-block__sandwich-btn:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 17px;
     width: 2px;
     background-color: #fff;
-  }
+}
 
-  .ingredients-block__sandwich-btn:before {
+.ingredients-block__sandwich-btn:before {
     transform: rotate(45deg);
-  }
+}
 
-  .ingredients-block__sandwich-btn:after {
+.ingredients-block__sandwich-btn:after {
     transform: rotate(-45deg);
-  }
+}
 
 
 /* End wraper adn form section */
 
 /* Begin recipes section */
 
-.right-recipes-block, .section-header {
+.right-recipes-block,
+.section-header {
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -289,24 +302,25 @@ button {
     left: 27px;
     width: 32px;
     height: 32px;
-  }
+}
 
-.full-recipe-block__sandwich-btn:before, .full-recipe-block__sandwich-btn:after {
+.full-recipe-block__sandwich-btn:before,
+.full-recipe-block__sandwich-btn:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
     background-color: #222;
-  }
+}
 
-  .full-recipe-block__sandwich-btn:before {
+.full-recipe-block__sandwich-btn:before {
     transform: rotate(45deg);
-  }
+}
 
-  .full-recipe-block__sandwich-btn:after {
+.full-recipe-block__sandwich-btn:after {
     transform: rotate(-45deg);
-  }
+}
 
 
 
