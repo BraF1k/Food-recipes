@@ -1,17 +1,24 @@
+//FIXME Вынести в функцию последние измекнения
+
+let linksOfRecipe = document.getElementsByClassName('right-recipes-block__btn');
+
+console.log(linksOfRecipe);
+console.log(linksOfRecipe.length);
+
+
+for (let link of linksOfRecipe) {
+    link.addEventListener('click', function (event) {
+        console.log(event.target)
+    })
+}
+
 function madeIngredientsList() {
     let resultList = '';
-    // const ingredientsList = [];
     const ingredients = document.getElementsByClassName('ingredients-block');
 
 
     for (let ingredient of ingredients) {
-        // ingredientsList.push([
-        //     ingredient.querySelector('.ingradient').value,
-        //     ingredient.querySelector('.ingradient-count').value,
-        //     ingredient.querySelector('.ingredients-block__measure').value
-        // ]);
-
-        resultList += `<li class="ingredients-all-block__item">${ingredient.querySelector('.ingradient').value} - ${ingredient.querySelector('.ingradient-count').value} ${ingredient.querySelector('.ingredients-block__measure').value}</li> \n`;
+        resultList += `<li class="ingredients-all-block-list__item">${ingredient.querySelector('.ingradient').value} - ${ingredient.querySelector('.ingradient-count').value} ${ingredient.querySelector('.ingredients-block__measure').value}</li> \n`;
     }
 
 
@@ -66,7 +73,9 @@ export function PostRecipe() {
                                         </div>
 
                                         <div class="right-recipes-block__ingredients right-recipes-block_display-n">
+                                            <ol class="ingredients-all-block-list">
                                                 ${madeIngredientsList()}
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
@@ -74,5 +83,16 @@ export function PostRecipe() {
                         </div>
         
         `)
+
+        linksOfRecipe = document.getElementsByClassName('right-recipes-block__btn');
+
+        for (let link of linksOfRecipe) {
+            link.addEventListener('click', function (event) {
+                console.log(event.target)
+            })
+        }
+
+        console.log(linksOfRecipe);
+        console.log(linksOfRecipe.length);
     });
 }

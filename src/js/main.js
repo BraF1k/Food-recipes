@@ -3,7 +3,7 @@ import {
     HideRecipe
 } from "./show-recipe";
 import {
-    PostRecipe
+    PostRecipe, linksOfRecipe
 } from "./post";
 import {
     CloseIngradientBlock

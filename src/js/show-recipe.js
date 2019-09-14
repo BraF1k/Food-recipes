@@ -1,3 +1,10 @@
+function getInformationsOfRecipe () {
+    
+}
+
+
+
+
 export function ShowRecipe (link) {
     let blockOfRecipe = document.querySelector('.full-recipe-block');
     let overlay = document.querySelector('.overlay');
