@@ -1,17 +1,3 @@
-//FIXME Вынести в функцию последние измекнения
-
-let linksOfRecipe = document.getElementsByClassName('right-recipes-block__btn');
-
-console.log(linksOfRecipe);
-console.log(linksOfRecipe.length);
-
-
-for (let link of linksOfRecipe) {
-    link.addEventListener('click', function (event) {
-        console.log(event.target)
-    })
-}
-
 function madeIngredientsList() {
     let resultList = '';
     const ingredients = document.getElementsByClassName('ingredients-block');
@@ -83,16 +69,5 @@ export function PostRecipe() {
                         </div>
         
         `)
-
-        linksOfRecipe = document.getElementsByClassName('right-recipes-block__btn');
-
-        for (let link of linksOfRecipe) {
-            link.addEventListener('click', function (event) {
-                console.log(event.target)
-            })
-        }
-
-        console.log(linksOfRecipe);
-        console.log(linksOfRecipe.length);
     });
 }
