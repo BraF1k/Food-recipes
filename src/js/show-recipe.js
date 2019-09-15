@@ -4,6 +4,7 @@ export function getInformationsOfRecipe(link) {
     let recipeMethod = link.previousElementSibling.previousElementSibling;
     let recipeImg = link.parentNode.parentNode.previousElementSibling.innerHTML.trim();
 
+    console.log(link.previousElementSibling)
 
     document.querySelector('.full-recipe-block__btn').insertAdjacentHTML('afterend', `
         
