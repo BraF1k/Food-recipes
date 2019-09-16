@@ -19,8 +19,8 @@ import {
     PostRecipe
 } from "./post";
 import {
-    CloseIngradientBlock
-} from "./close-ingradient";
+    CloseIngradientBlock, AddNewIngradientfield
+} from "./close-and-add-ingradient";
 
 
 
@@ -41,3 +41,6 @@ document.querySelector('.overlay').addEventListener('click', function () {
 PostRecipe();
 // Скрытие одного из инградиентов
 CloseIngradientBlock();
+
+//Добавление поля для нововго инградиента
+AddNewIngradientfield();
