@@ -52,6 +52,16 @@ export function getInformationsOfRecipe(link) {
 }
 
 
+function ClearRecipeBlock () {
+    let recipeBlock = document.querySelector('.full-recipe-block');
+
+    while (recipeBlock.lastElementChild.tagName != 'BUTTON') {
+        recipeBlock.lastElementChild.remove();
+    }
+}
+
+
+
 
 
 export function ShowRecipe(link) {
@@ -68,6 +78,8 @@ export function ShowRecipe(link) {
 export function HideRecipe() {
     document.querySelector('.full-recipe-block').classList.add("hidden");
     document.querySelector('.overlay').classList.remove('overlay-show');
+    ClearRecipeBlock()
+    // setTimeout(ClearRecipeBlock, 300);//На всякий случай запускать можно немного позже
 }
 
 //link.parentNode.parentNode.parentNode.previousElementSibling.innerHTML.trim() - Путь к картинке
