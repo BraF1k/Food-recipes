@@ -19,7 +19,7 @@ export function AddNewIngradientfield() {
             e.target.parentNode.insertAdjacentHTML('afterend', `<!-- Bedin ingredients-block -->
                         <div class="ingredients-block ingredients-block_m-b">
                             <input type="text" placeholder="Укажите ингадиент"
-                                class="ingredients-block__input ingradient">
+                                class="ingredients-block__input ingradient" required>
                             <input type="number" value="0" min="0"
                                 class="ingredients-block__input arrows_d-n ingredients-block_w-20-tac ingradient-count">
                             <select name="measure" class="ingredients-block__measure">
@@ -36,8 +36,6 @@ export function AddNewIngradientfield() {
                             </button>
                         </div>
                         <!-- End ingredients-block -->`);
-        } else {
-            console.log(e.target)
         }
     })
 }

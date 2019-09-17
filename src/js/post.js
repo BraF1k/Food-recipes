@@ -2,7 +2,6 @@ function madeIngredientsList() {
     let resultList = '';
     const ingredients = document.getElementsByClassName('ingredients-block');
 
-
     for (let ingredient of ingredients) {
         resultList += `<li class="ingredients-all-block-list__item">${ingredient.querySelector('.ingradient').value} - ${ingredient.querySelector('.ingradient-count').value} ${ingredient.querySelector('.ingredients-block__measure').value}</li> \n`;
     }
@@ -18,14 +17,18 @@ export function PostRecipe() {
     const postButton = document.querySelector('.blog-form_post');
     const nameOfDish = document.querySelector('.blog-form__food-name');
     const preparationMethod = document.querySelector('.blog-form__food-method');
+    const ingredient = document.getElementsByClassName('ingredients-block__input');
     let cuttedMethod = '';
 
 
 
-
-
-
     postButton.addEventListener('click', function () {
+
+        for (let field of ingredient) {
+            if (field.value == "" || nameOfDish.value == "" || preparationMethod.value == "") {
+                return;
+            }
+        }
 
 
         preparationMethod.value.length > 122 ? cuttedMethod = preparationMethod.value.slice(0, 122) : cuttedMethod = preparationMethod.value;
